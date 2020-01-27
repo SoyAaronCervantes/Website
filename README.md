@@ -1,4 +1,4 @@
-![GDG UNAM LOGO](https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/p960x960/29025607_2092871120979211_3420226193180327936_o.jpg?_nc_cat=108&_nc_ohc=yeFMQ56lyp8AX-LQ-fA&_nc_ht=scontent-qro1-1.xx&_nc_tp=6&oh=e17ae3df8984c4ea66602f0bc38dd67d&oe=5ED050B4)
+![GDG UNAM LOGO](./img/gdg/logo.png)
 
 # GDG UNAM SITE
 > A sketch from a Front-end Member
