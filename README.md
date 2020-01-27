@@ -57,6 +57,26 @@ yarn
 
 And you will install package.json dependencies.
 
+## Guidelines
+
+### CSS & SCSS
+As a developer, i would like to be clear about this project. I know how hard its to maintain a project.
+
+So, I'll let you know **_what/where/why/how_ is my SCSS architecture**.
+
+After searching, and thinking what are the best guidelines. I'll let you two links to know more about it.
+
+* [ CSS ](https://cssguidelin.es/)
+* [ SASS / SCSS ](https://sass-guidelin.es/)
+ 
+
+#####**Why do i share this?**
+Well, on my experience, it's better to know, how to work and contribute on the project.
+
+So, i prefer to let you know, where did i take my architecture, instead of try to explain more about this topic.
+
+> _Hope you enjoy!_
+
 ## Licensing
 
 The code in this project is licensed under MIT license.
