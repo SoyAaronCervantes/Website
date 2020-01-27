@@ -31,11 +31,12 @@ npm run compile:sass
 live-server .
 ```
 
-When you run the last command, it will open a browser tab or browser windows, and it shows your the index.html
+When you run the last command, it will open a browser tab or browser windows,
+and it shows your the index.html
 
 ## Developing
 
-It you want to contribute, i'll prefer to contact to GDG UNAM. I'll let you their Social Medias
+It you want to contribute, i prefer if you can contact to GDG UNAM. I'll let you their Social Medias
 
 * [Github](https://github.com/GDG-UNAM-global)
 * [Facebook](https://www.facebook.com/GDGUNAM/)
