@@ -21,8 +21,9 @@ It's so easy to install this project, just need to use `yarn` and `live-server` 
 
 ### Initial Configuration
 
-As i said on Install, you just need to get `yarn` and `live-server`. And that's all. Then you need to run, 
-the next commands on your shell.
+As i said on Install, you just need to get `yarn` and `live-server`.
+
+And that's all. Then you need to run, the next commands on your shell.
 
 
 ```shell
@@ -31,8 +32,7 @@ npm run compile:sass
 live-server .
 ```
 
-When you run the last command, it will open a browser tab or browser windows,
-and it shows your the index.html
+When you run the last command, it will open `index.html` on your default browser.
 
 ## Developing
 
@@ -45,7 +45,9 @@ It you want to contribute, i prefer if you can contact to GDG UNAM.
 * [Meetup](https://www.meetup.com/GDG-UNAM/)
 * [Twitter](https://twitter.com/gdgunam?lang=en)
 
-If you still want to contribute on this project. Follow the next command-lines
+If you still want to contribute on this project.
+
+_Follow the next command-lines:_
 
 ```shell
 git clone git@github.com:SoyAaronCervantes/GDG-UNAM-Websitet-sketch.git
