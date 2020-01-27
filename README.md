@@ -50,8 +50,8 @@ If you still want to contribute on this project.
 _Follow the next command-lines:_
 
 ```shell
-git clone git@github.com:SoyAaronCervantes/GDG-UNAM-Websitet-sketch.git
-cd gdg/
+git clone git@github.com:SoyAaronCervantes/GDG-UNAM-Website-sketch.git
+cd GDG-UNAM-Website-sketch/
 yarn
 ```
 
