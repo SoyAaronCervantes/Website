@@ -1,6 +1,6 @@
 {
   "name": "gdg",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "GDG UNAM Website",
   "main": "index.js",
   "scripts": {
