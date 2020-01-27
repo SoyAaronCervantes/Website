@@ -70,7 +70,7 @@ After searching, and thinking what are the best guidelines. I'll let you two lin
 * [ SASS / SCSS ](https://sass-guidelin.es/)
  
 
-#####**Why do i share this?**
+##### **Why do i share this?**
 Well, on my experience, it's better to know, how to work and contribute on the project.
 
 So, i prefer to let you know, where did i take my architecture, instead of try to explain more about this topic.
