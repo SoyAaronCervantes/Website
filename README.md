@@ -27,8 +27,6 @@ And that's all. Then you need to run, the next commands on your shell.
 
 
 ```shell
-yarn init
-npm run compile:sass
 live-server .
 ```
 
