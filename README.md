@@ -1,4 +1,6 @@
-![GDG UNAM LOGO](./img/gdg/logo.png)
+<p align="center">
+  <img width="460" height="300" src="./img/gdg/logo.png">
+</p>
 
 # GDG UNAM SITE
 > A sketch from a Front-end Member
