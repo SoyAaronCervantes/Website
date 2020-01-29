@@ -75,6 +75,16 @@ Well, on my experience, it's better to know, how to work and contribute on the p
 
 So, i prefer to let you know, where did i take my architecture, instead of try to explain more about this topic.
 
+
+#### CSS / SCSS syntax
+
+Roughly, we want (shamelessly inspired by CSS Guidelines):
+
+* Two (2) spaces indents, no tabs;
+* Ideally, 80-characters wide lines;
+* Properly written multi-line CSS rules;
+* Meaningful use of whitespace
+
 > _Hope you enjoy!_
 
 ## Licensing
