@@ -75,6 +75,7 @@ Well, on my experience, it's better to know, how to work and contribute on the p
 
 So, i prefer to let you know, where did i take my architecture, instead of try to explain more about this topic.
 
+I'll let you the [link for a summary](https://sass-guidelin.es/#too-long-didnt-read).
 
 #### CSS / SCSS syntax
 
