@@ -1,3 +1,21 @@
+/*****************************************\
+             #Section-header
+\*****************************************/
+/*****************************************\
+             #Section-color
+\*****************************************/
+/*****************************************\
+          #Section-color-grey
+\*****************************************/
+/*****************************************\
+             #Section-header
+\*****************************************/
+/*****************************************\
+             #Section-color
+\*****************************************/
+/*****************************************\
+          #Section-color-grey
+\*****************************************/
 *,
 *::after,
 *::before {
@@ -22,6 +40,19 @@ body {
   display: grid;
   box-sizing: border-box; }
 
+.body {
+  background-color: #fafafa;
+  color: #424242; }
+
+/*****************************************\
+             #Section-header
+\*****************************************/
+/*****************************************\
+             #Section-color
+\*****************************************/
+/*****************************************\
+          #Section-color-grey
+\*****************************************/
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -72,9 +103,11 @@ ul,
 ol,
 dl,
 blockquote {
+  font-family: inherit;
   font-weight: 300; }
 
 dd {
+  font-family: inherit;
   margin: 0 3rem; }
 
 p,
@@ -83,15 +116,18 @@ a {
 
 strong,
 b {
+  font-family: inherit;
   font-weight: 400; }
 
 ul,
 ol,
 dl {
+  font-family: inherit;
   font-size: 1.5rem;
   font-weight: 300; }
 
 blockquote {
+  font-family: inherit;
   font-size: 1.8rem;
   font-style: italic;
   text-decoration: underline; }
@@ -99,9 +135,168 @@ blockquote {
 .mx-3-rem {
   margin: 0 3rem; }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .container-header {
   background-color: lightcoral;
   color: whitesmoke; }
+
+/*****************************************\
+          #Section-button-imports
+\*****************************************/
+/*****************************************\
+             #Section-header
+\*****************************************/
+/*****************************************\
+             #Section-color
+\*****************************************/
+/*****************************************\
+          #Section-color-grey
+\*****************************************/
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/*****************************************\
+             #Section-button
+\*****************************************/
+.btn {
+  /*****************************************\
+          #Section-button-anchor
+  \*****************************************/
+  /*****************************************\
+           #Section-button-hover
+  \*****************************************/
+  /*****************************************\
+           #Section-button-disabled
+  \*****************************************/
+  /*****************************************\
+           #Section-button-active
+                     &
+           #Section-button-focus
+  \*****************************************/
+  /*****************************************\
+           #Section-button-after
+  \*****************************************/
+  /**
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: .7rem;
+    transition: all .4s;
+  }
+
+   */
+  /*****************************************\
+            #Section-button-primary
+  \*****************************************/
+  /*****************************************\
+           #Section-button-secondary
+  \*****************************************/
+  /*****************************************\
+           #Section-button-tertiary
+  \*****************************************/
+  /*****************************************\
+          #Section-button-shadow
+  \*****************************************/
+  /*****************************************\
+           #Section-button-size
+  \*****************************************/
+  /*****************************************\
+           #Section-button-animated
+  \*****************************************/ }
+  .btn, .btn:link, .btn:visited {
+    padding: 1.6rem calc( 2 * 1.6rem);
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: .7rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .2s; }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 1.3rem rgba(158, 158, 158, 0.4); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn__disabled, .btn:disabled {
+    background-color: rgba(97, 97, 97, 0.3);
+    color: #616161;
+    box-shadow: none;
+    cursor: auto; }
+    .btn__disabled:hover, .btn:disabled:hover {
+      transform: none; }
+      .btn__disabled:hover::after, .btn:disabled:hover::after {
+        transform: none; }
+  .btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn__primary {
+    background-color: #1975d2;
+    color: white; }
+    .btn__primary::after {
+      background-color: #1975d2; }
+  .btn__secondary {
+    background-color: transparent;
+    border: 1px solid #424242;
+    color: #1975d2;
+    box-shadow: 0 1rem 1.5rem rgba(158, 158, 158, 0); }
+    .btn__secondary:hover {
+      border: 1px solid #1975d2;
+      background-color: #1975d2;
+      color: white;
+      box-shadow: 0 1rem 1.3rem rgba(158, 158, 158, 0.3); }
+    .btn__secondary:active, .btn__secondary:focus {
+      background-color: transparent;
+      color: #1975d2; }
+  .btn__tertiary {
+    background-color: transparent;
+    color: #1975d2; }
+    .btn__tertiary:hover {
+      box-shadow: none;
+      border: 1px solid #424242; }
+    .btn__tertiary:active, .btn__tertiary:focus {
+      box-shadow: none; }
+  .btn__secondary:active, .btn__secondary:focus, .btn__tertiary:active, .btn__tertiary:focus {
+    background-color: transparent; }
+  .btn__shadow {
+    box-shadow: 0 1rem 1.5rem rgba(158, 158, 158, 0.5); }
+  .btn__small {
+    padding: 1rem calc( 2 * 1rem);
+    font-size: 1.5rem; }
+  .btn__large {
+    padding: 2rem calc( 2 * 2rem);
+    font-size: 1.8em; }
+  .btn__huge {
+    padding: 2.5rem calc( 2 * 2.5rem);
+    border-radius: 1.4rem;
+    font-size: 2rem; }
+  .btn__animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards; }
 
 /*
 @import
