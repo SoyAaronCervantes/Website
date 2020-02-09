@@ -1,3 +1,251 @@
+/*****************************************\
+          #Section-button-imports
+\*****************************************/
+@import "scss/abstracts/variables";
+@import "scss/abstracts/mixins";
+@import "scss/base/animations";
+
+/*****************************************\
+             #Section-button
+\*****************************************/
 .btn {
-  padding: ;
+
+  /*****************************************\
+          #Section-button-anchor
+  \*****************************************/
+  &,
+  &:link,
+  &:visited {
+
+
+    @include button__size(1.6rem);
+
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: .7rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .2s;
+
+  }
+
+
+
+  /*****************************************\
+           #Section-button-hover
+  \*****************************************/
+  &:hover {
+
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 1.3rem rgba($color-grey-500, 0.4);
+
+    &::after {
+
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+
+    }
+
+  }
+
+
+
+  /*****************************************\
+           #Section-button-disabled
+  \*****************************************/
+  &__disabled,
+  &:disabled {
+
+    background-color: rgba($color-grey-700, 0.3);
+    color: $color-grey-700;
+    box-shadow: none;
+    cursor: auto;
+
+    &:hover {
+
+      transform: none;
+
+      &::after {
+
+        transform: none;
+
+      }
+
+    }
+
+  }
+
+
+  /*****************************************\
+           #Section-button-active
+                     &
+           #Section-button-focus
+  \*****************************************/
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+  }
+
+
+
+  /*****************************************\
+           #Section-button-after
+  \*****************************************/
+  /**
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: .7rem;
+    transition: all .4s;
+  }
+
+   */
+
+
+  /*****************************************\
+            #Section-button-primary
+  \*****************************************/
+  &__primary {
+
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-secondary;
+    }
+
+  }
+
+
+  /*****************************************\
+           #Section-button-secondary
+  \*****************************************/
+  &__secondary {
+
+    background-color: transparent;
+    border: 1px solid $color-grey-800;
+    color: $color-secondary;
+    box-shadow: 0 1rem 1.5rem rgba($color-grey-500, 0);
+
+
+    &:hover {
+
+      border: 1px solid $color-secondary;
+      background-color: $color-secondary;
+      color: $color-white;
+      box-shadow: 0 1rem 1.3rem rgba($color-grey-500, 0.3);
+
+    }
+
+    &:active,
+    &:focus {
+
+      background-color: transparent;
+      color: $color-secondary;
+
+    }
+
+
+  }
+
+
+
+  /*****************************************\
+           #Section-button-tertiary
+  \*****************************************/
+  &__tertiary {
+
+    background-color: transparent;
+    color: $color-secondary;
+
+    &:hover {
+
+      box-shadow: none;
+      border: 1px solid $color-grey-800;
+
+    }
+
+    &:active,
+    &:focus {
+
+      box-shadow: none;
+
+    }
+
+  }
+
+  &__secondary,
+  &__tertiary {
+
+
+    &:active,
+    &:focus {
+
+      background-color: transparent;
+
+    }
+
+  }
+
+
+  /*****************************************\
+          #Section-button-shadow
+  \*****************************************/
+  &__shadow {
+
+    box-shadow: 0 1rem 1.5rem rgba($color-grey-500, 0.5);
+
+  }
+
+
+
+  /*****************************************\
+           #Section-button-size
+  \*****************************************/
+  &__small {
+
+    @include button__size(1rem);
+    font-size: 1.5rem;
+
+  }
+
+  &__large {
+
+    @include button__size(2rem);
+    font-size: 1.8em;
+
+  }
+
+  &__huge {
+
+    @include button__size(2.5rem);
+    border-radius: 1.4rem;
+    font-size: 2rem;
+
+  }
+
+
+
+  /*****************************************\
+           #Section-button-animated
+  \*****************************************/
+  &__animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+
 }
