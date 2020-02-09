@@ -121,11 +121,11 @@
   \*****************************************/
   &__primary {
 
-    background-color: $color-secondary;
+    background-color: $color-primary;
     color: $color-white;
 
     &::after {
-      background-color: $color-secondary;
+      background-color: $color-primary;
     }
 
   }
@@ -138,14 +138,14 @@
 
     background-color: transparent;
     border: 1px solid $color-grey-800;
-    color: $color-secondary;
+    color: $color-primary;
     box-shadow: 0 1rem 1.5rem rgba($color-grey-500, 0);
 
 
     &:hover {
 
-      border: 1px solid $color-secondary;
-      background-color: $color-secondary;
+      border: 1px solid $color-primary;
+      background-color: $color-primary;
       color: $color-white;
       box-shadow: 0 1rem 1.3rem rgba($color-grey-500, 0.3);
 
@@ -155,7 +155,7 @@
     &:focus {
 
       background-color: transparent;
-      color: $color-secondary;
+      color: $color-primary;
 
     }
 
@@ -170,7 +170,7 @@
   &__tertiary {
 
     background-color: transparent;
-    color: $color-secondary;
+    color: $color-primary;
 
     &:hover {
 
