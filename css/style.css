@@ -256,7 +256,7 @@ blockquote {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn__primary {
     background-color: #1975d2;
-    color: white; }
+    color: #fafafa; }
     .btn__primary::after {
       background-color: #1975d2; }
   .btn__secondary {
@@ -267,7 +267,7 @@ blockquote {
     .btn__secondary:hover {
       border: 1px solid #1975d2;
       background-color: #1975d2;
-      color: white;
+      color: #fafafa;
       box-shadow: 0 1rem 1.3rem rgba(158, 158, 158, 0.3); }
     .btn__secondary:active, .btn__secondary:focus {
       background-color: transparent;
@@ -297,6 +297,41 @@ blockquote {
   .btn__animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards; }
+
+/*****************************************\
+        #Section-scroll-imports
+\*****************************************/
+/*****************************************\
+             #Section-header
+\*****************************************/
+/*****************************************\
+             #Section-color
+\*****************************************/
+/*****************************************\
+          #Section-color-grey
+\*****************************************/
+/*****************************************\
+        #Section-scroll-width
+\*****************************************/
+::-webkit-scrollbar {
+  width: 9px; }
+
+/*****************************************\
+        #Section-scroll-track
+\*****************************************/
+::-webkit-scrollbar-track {
+  background-color: rgba(158, 158, 158, 0.4);
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px; }
+
+/*****************************************\
+        #Section-scroll-handle
+\*****************************************/
+::-webkit-scrollbar-thumb {
+  background-color: rgba(25, 117, 210, 0.4);
+  border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #1975d2; }
 
 /*
 @import
