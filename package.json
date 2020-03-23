@@ -4,8 +4,9 @@
   "description": "GDG UNAM Website",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server .",
-    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+    "server:dev": "lite-server .",
+    "compile:sass": "node-sass scss/main.scss css/style.css -w",
+    "start": "concurrently yarn:server:dev yarn:compile:sass"
   },
   "repository": "git@github.com:GDG-UNAM-global/Website.git",
   "author": "Aaron Cervantes",
@@ -14,6 +15,7 @@
     "animate.css": "^3.7.2"
   },
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "lite-server": "^2.5.4",
     "node-sass": "^4.13.1"
   }
