@@ -4,9 +4,13 @@
   "description": "GDG UNAM Website",
   "main": "index.js",
   "scripts": {
-    "server:dev": "lite-server .",
-    "compile:sass": "node-sass scss/main.scss css/style.css -w",
-    "start": "concurrently yarn:server:dev yarn:compile:sass"
+    "start": "concurrently yarn:server:dev yarn:watch:sass",
+    "server:dev": "lite-server -baseDir=\"src\"",
+    "watch:sass": "node-sass src/scss/main.scss dist/css/style.comp.css -w",
+    "build:css": "concurrently yarn:compile:sass yarn:prefix:css yarn:compress:css",
+    "compile:sass": "node-sass src/scss/main.scss dist/css/style.comp.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.min.css --output-style compressed",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/style.comp.css -o dist/css/style.prefix.css"
   },
   "repository": "git@github.com:GDG-UNAM-global/Website.git",
   "author": "Aaron Cervantes",
@@ -15,8 +19,11 @@
     "animate.css": "^3.7.2"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "concat": "^1.0.3",
     "concurrently": "^5.1.0",
     "lite-server": "^2.5.4",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0"
   }
 }

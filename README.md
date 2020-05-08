@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./img/gdg/logo.png">
+  <img src="src/media/img/gdg/logo.png">
 </p>
 
 # GDG UNAM SITE

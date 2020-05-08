@@ -1,34 +1,29 @@
 @charset "utf-8";
 
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/placeholcer';
+@import 'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins',
+'abstracts/placeholcer';
 
 // @import 'vendors/*';
 
-@import
-  'base/base',
-  'base/reset',
-  'base/typography',
-  'base/utilities',
-  'base/animations';
+@import 'base/base',
+'base/reset',
+'base/typography',
+'base/utilities',
+'base/animations';
 
-@import
-  'layout/grid';
+@import 'layout/grid';
 
-@import
-  'components/headers',
-  'components/button',
-  'components/scroll';
+@import 'components/headers',
+'components/button',
+'components/scroll';
 
 /*
 @import
   'pages/';
 */
 
-@import
-  'themes/theme';
+@import 'themes/theme';
 
 @import 'shame';

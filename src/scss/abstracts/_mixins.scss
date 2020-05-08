@@ -1,4 +1,4 @@
-@import "scss/abstracts/variables";
+@import "variables";
 
 @mixin button__size($size) {
   padding: calc( #{ $size } * 1 ) calc( 2 * #{ $size } );
